@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Homepage: Deep Allocation</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Theme CSS -->
+  <link href="css_Frontier/freelancer.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+
+<body id="page-top" class="index">
+  <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+  <!-- Navigation -->
+
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="../index.html#page-top">
+          <!--
+          <font color=#0000ff>Deep</font>
+          <font color=#fffff>Allo</font>
+          <font color=#ff006f>cation</font>
+        -->
+          <font color=#ffffff><b>DeepAllocation</b></font>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li class="page-scroll">
+            <a href="#Motivation">Motivation</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#Model">Model</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#Performance">Performance</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#Composition">Composition</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="container" id="maincontent" tabindex="-1"><!-- style="background: linear-gradient( to bottom, #5d6578,#000000 );">-->
+      <div class="gradientHolder">
+      <div class="row">
+        <div class="col-lg-12">
+          <!--<img class="img-responsive" src="img/profile.png" alt="">-->
+          <div class="intro-text">
+            <div class="motto">
+              AI frontier in investment portfolio
+            </div>
+
+            <!--<hr class="star-light">-->
+            <!--<div class="motto_sub" style="font-family: Georgia;"><i>“Equal-weighting is ingrained in our mind.”</i><br><br>-->
+            <div class="motto_sub" style="font-family: Georgia;"><i>
+                <!-- --></i><br><br>
+              <!-- Asset allocation is the process of diversifying an investment portfolio across different asset classes.-->
+              <!--Asset allocation is crucial in portfolio management.<br>
+              We develop new allocation models by using deep learning techniques and portfolio portfolio theories.-->
+            </div>
+
+          </div>
+        </div>
+      </div>
+        </div>
+  </header>
+
+
+
+  <section class="expected_returns" id="Motivation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 text-center" style="float:none;margin:auto;">
+          <div class="intro-text" style="text-align:left;">
+
+
+
+            <div class="sec1" style="text-align:left">
+              <br>Backgound<br></div>
+            <!--<hr class="star-primary">-->
+            <div class="sec1_sub1">
+              I would like to introduce some papers bridging deep learning and traditional
+              financial theories (especially in the field of investments),
+              hoping that the tecniques employed in them will be used as components
+              in developing new investment and risk management systems.
+              <br>
+
+            </div>
+
+            <div class="sec1" style="text-align:left">
+              <br>Content<br></div>
+                    <div class="sec1_sub1">
+              The content consists of six stages:
+              1. data, 2. deep neural networks, 3. optimization, 4.financial use case,
+              5. explainable machine learning, and 6. industrial application.
+</div><br>
+            <!--<hr class="star-primary">-->
+            <div class="sec1_sub1">
+              <img src="img/Contents.png" alt="Cabin" style="max-width: 100%;
+              height: auto; padding:2% 0 2% 0; border-top: double;border-bottom: double"></img>
+              <br><br>
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+
+
+  <section class="expected_returns" id="Model">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 text-center" style="float:none;margin:auto;">
+          <div class="intro-text" style="text-align:left;">
+
+
+            <div class="sec1" style="text-align:left">
+              1. Financial data<br></div>
+
+            <div class="sec1_sub0" style="text-align:left">
+              <br>Technical indicator<br></div>
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Forecasting price movements using technical indicators: Investigating the impact
+                    of varying input window length
+                  </div>
+                  (2017), Y. Shynkevich et al.
+                  <A HREF="https://www.sciencedirect.com/science/article/pii/S0925231217311074" style="color: #0000ff">[pdf]</A>
+              </ul>
+            </div>
+
+
+
+            <div class="sec1_sub0" style="text-align:left">
+              Macroecnomic indicators<br></div>
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    An Algorithmic Crystal Ball: Forecasts-based on Machine Learning
+                  </div>
+                  (2018), J.-K. Jung et al.
+                  <A HREF="https://www.imf.org/en/Publications/WP/Issues/2018/11/01/An-Algorithmic-Crystal-Ball-Forecasts-based-on-Machine-Learning-46288" style="color: #0000ff">[pdf]</A>
+              </ul>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub0" style="text-align:left">
+              Fundamental indicators<br></div>
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Deep Learning for Predicting Asset Returns
+                  </div>
+                  (2018), G. Feng et al.
+                  <A HREF="https://arxiv.org/pdf/1804.09314.pdf" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It finds the existence of nonlinear factors which
+                      explain predictability of returns, in particular at the extremes of
+                      the characteristic space.
+                  </ul>
+              </ul>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub0" style="text-align:left">
+              Multi-indicators<br></div>
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Discovering Bayesian Market Views for Intelligent Asset Allocation
+                  </div>
+                  (2018), F. Z. Xing et al.
+                  <A HREF="https://arxiv.org/pdf/1802.09911.pdf" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It proposes to formalize public mood into market views,
+                      because market views can be integrated into the modern portfolio theory.
+                      In the framework, the optimal market views will maximize returns in each period
+                      with a Bayesian asset allocation model. They use the data of capitalization,
+                      prices, volume, and sentiment and train two neural models to generate
+                      the market views, and benchmark the model performance on other popular
+                      asset allocation strategies.
+                  </ul>
+              </ul>
+            </div>
+
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Visual Attention Model for Cross-sectional Stock Return Prediction and End-to-End Multimodal Market Representation Learning
+                  </div>
+                  (2018), R. Zhao et al.
+                  <A HREF="https://arxiv.org/abs/1809.03684" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: Using the data of price-volume, historical return, technical indicators,
+                      and fundamental indicators, it applies a convolutional neural network over
+                      this market image to build market features in a hierarchical way.
+                      We use a recurrent neural network, with an attention mechanism over
+                      the market feature maps, to model temporal dynamics in the market.
+                  </ul>
+              </ul>
+            </div>
+
+
+
+            <div class="sec1" style="text-align:left">
+              <br>2. Deep neural networks<br></div>
+
+            <div class="sec1" style="text-align:left">
+              <br>2.1 Multi-layer perceptron<br></div>
+
+            <div class="sec1" style="text-align:left">
+              <br>2.2 Recurrent neural networks <br></div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Deep learning with long short-term memory networks for financial market predictions
+                  </div>
+                  (2018), T. Fischer and C. Krauss.
+                  <A HREF="https://www.sciencedirect.com/science/article/abs/pii/S0377221717310652" style="color: #0000ff">[pdf]</A>
+              </ul>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1" style="text-align:left">
+              <br>2.3 Convolutional neural networks<br></div>
+
+
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Algorithmic financial trading with deep convolutional neuralnetworks: Time series to image conversion approach
+                  </div>
+                  (2018), O. B. Sezer and A. M. Ozbayoglu.
+                  <A HREF="https://www.sciencedirect.com/science/article/pii/S1568494618302151" style="color: #0000ff">[pdf]</A>
+
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It proposes a novel algorithmic trading model CNN-TA using a 2-D convolutional
+                      neural network based on image processing properties. In order to convert financial time series
+                      into 2-D images, 15 different technical indicators each with different parameter selections are utilized.
+                  </ul>
+
+
+              </ul>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1" style="text-align:left">
+              <br>2.4 Autoencoder <br></div>
+
+
+            <div class="sec1" style="text-align:left">
+              <br>3. Optimization<br></div>
+
+
+            <div class="sec1" style="text-align:left">
+              <br>4. Financial use cases<br></div>
+
+
+            <div class="sec1_sub0" style="text-align:left">
+              4.1. Prediction: up/down, trend<br></div>
+
+            <div class="sec1_sub0" style="text-align:left">
+              4.2. Deep trading<br></div>
+
+            <div class="sec1_sub0" style="text-align:left">
+              4.3. Deep portfolio/deep factor<br></div>
+
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Applying Deep Learning to Enhance Momentum Trading Strategies in Stocks
+                  </div>
+                  (2013), L. Takeuchi and Y.-Y. Lee.
+                  <A HREF="http://cs229.stanford.edu/proj2013/TakeuchiLee-ApplyingDeepLearningToEnhanceMomentumTradingStrategiesInStocks.pdf" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It uses an autoencoder composed of stacked
+                      restricted Boltzmann machines to extract features from the history of individual
+                      stock prices. Its model is able to discover an enhanced version of the momentum effect
+                      in stocks without extensive hand-engineering of input features.
+                  </ul>
+              </ul>
+            </div>
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Deep learning with long short-term memory networks for financial market predictions
+                  </div>
+                  (2018), T. Fischer and C. Krauss.
+                  <A HREF="https://www.sciencedirect.com/science/article/abs/pii/S0377221717310652" style="color: #0000ff">[pdf]</A>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Deep Learning in Asset Pricing
+                  </div>
+                  (2019), L. Chen et al.
+                  <A HREF="https://economics.yale.edu/sites/default/files/deep_learning_in_asset_pricing.pdf" style="color: #0000ff">[pdf]</A>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Deep Factor Model
+                  </div>
+                  (2018), K. Nakagawa et al.
+                  <A HREF="https://arxiv.org/pdf/1810.01278.pdf" style="color: #0000ff">[pdf]</A>
+
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It proposes to represent a return model
+                      and risk model in a unified manner with deep learning,
+                      which is a representative model that can express a nonlinear relationship.
+                  </ul>
+              </ul>
+            </div>
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Deep Learning in Characteristics-Sorted Factor Models
+                  </div>
+                  (2019), G. Feng et al.
+                  <A HREF="https://arxiv.org/pdf/1805.01104.pdf" style="color: #0000ff">[pdf]</A>
+
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Deep Recurrent Factor Model: Interpretable Non-Linear and Time-Varying Multi-Factor Model
+                  </div>
+                  (2019), K. Nakagawa et al.
+                  <A HREF="https://arxiv.org/ftp/arxiv/papers/1901/1901.11493.pdf" style="color: #0000ff">[pdf]</A>
+
+            </div>
+
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Deep Learning Approximation for Stochastic Control Problems
+                  </div>
+                  (2016), J. Han and Weinan E.
+                  <A HREF="https://arxiv.org/pdf/1611.07422.pdf" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It develops a deep learning approach that directly
+                      solves high-dimensional stochastic control problems based on
+                      Monte-Carlo sampling and test this approach using examples from the areas of optimal trading.
+                  </ul>
+              </ul>
+            </div>
+
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Machine learning and the cross-section of expected stock returns
+                  </div>
+                  (2018), M. Messmer
+                  <A HREF="http://www1.unisg.ch/www/edis.nsf/SysLkpByIdentifier/4816/$FILE/dis4816.pdf" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: Modeling expected cross-sectional stock returns has a long tradition
+                      in asset pricing. It is motivated by shortcomings of classical portfolio
+                      sorting approaches and tackles the task with alternative methodologies
+                      including classical linear models and more advanced machine learning algorithms.
+                  </ul>
+              </ul>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Empirical Asset Pricing via Machine Learning
+                  </div>
+                  (2019), S. Gu et al.
+                  <A HREF="http://dachxiu.chicagobooth.edu/download/ML.pdf" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It performs a comparative analysis of machine learning methods for the canonical problem
+                      of empirical asset pricing: measuring asset risk premia. Improved risk premium
+                      measurement through machine learning simplifies the investigation into economic mechanisms of
+                      asset pricing and highlights the value of machine learning in financial innovation.
+                  </ul>
+              </ul>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Machine Learning and Asset Pricing Models (PhD Thesis)
+                  </div>
+                  (2018), R. A. Porsani.
+                  <A HREF="https://escholarship.org/uc/item/124940r0" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It incorporates statistical-learning techniques
+                      into the field of cross-sectional asset pricing.
+                  </ul>
+              </ul>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Deep Fundamental Factor Models
+                  </div>
+                  (2019), M. F. Dixon and N. G. Polson
+                  <A HREF="https://arxiv.org/pdf/1903.07677.pdf" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It develops deep fundamental factor models to interpret and
+                      capture non-linearity, interaction effects and non-parametric shocks in
+                      financial econometrics, by constructing a six-factor model of assets in
+                      the S&P 500 index and generating information ratios that are three times
+                      greater than generalized linear regression.
+                  </ul>
+              </ul>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Deep Learning for Forecasting Stock Returns in the Cross-Section
+                  </div>
+                  (2018), Masaya Abe and Hideki Nakayama
+                  <A HREF="https://arxiv.org/ftp/arxiv/papers/1801/1801.01777.pdf" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It implements deep learning to predict
+                      one-month-ahead stock returns in the cross-section in the Japanese
+                      stock market and investigates the performance of the method.
+                  </ul>
+              </ul>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Improving Factor-Based Quantitative Investing by Forecasting Company Fundamentals
+                  </div>
+                  (2018), J. Alberg and Z. C. Lipton
+                  <A HREF="https://arxiv.org/pdf/1711.04837.pdf" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: They first show through simulation that if they could (clairvoyantly)
+                      select stocks using factors calculated on future fundamentals (via oracle), then
+                      their portfolios would far outperform a standard factor approach.
+
+                  </ul>
+              </ul>
+            </div>
+
+
+            <div class="sec1_sub0" style="text-align:left">
+              4.4 Deep Reinforcement<br></div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Deep Reinforcement Learning in Financial Markets
+                  </div>
+                  (2019), S. Chakraborty
+                  <A HREF="https://arxiv.org/abs/1907.04373" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It explores the usage of deep reinforcement learning
+                      algorithms to automatically generate consistently profitable, robust,
+                      uncorrelated trading signals in any general financial market and develops
+                      a novel Markov decision process (MDP) model to capture the financial trading markets.
+
+                  </ul>
+              </ul>
+            </div>
+
+
+            <div class="sec1" style="text-align:left">
+              <br>5. Explaining machine learning<br></div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    A Unified Approach to Interpreting Model Predictions
+                  </div>
+                  (2017), S. M. Lundberg and S.-I. Lee
+                  <A HREF="https://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions.pdf" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It presents a unified framework for interpreting predictions,
+                      SHAP (SHapley Additive exPlanations). SHAP assigns each feature an importance
+                      value for a particular prediction.
+
+                  </ul>
+              </ul>
+            </div>
+
+            <div class="sec1" style="text-align:left">
+              <br>6. Industrial application<br></div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Artificial Intelligence
+                  </div>
+                  J.P. Morgan.
+                  <A HREF="https://www.jpmorgan.com/global/technology/artificial-intelligence" style="color: #0000ff">more</A>
+
+              </ul>
+            </div>
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    J.P.Morgan's massive guide to machine learning and big data jobs in finance.
+                  </div>
+                  J.P. Morgan.
+                  <A HREF="https://news.efinancialcareers.com/dk-en/285249/machine-learning-and-big-data-j-p-morgan" style="color: #0000ff">more</A>
+              </ul>
+            </div>
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Quantitative investing and the limits of (deep) learning from financial data.
+                  </div>
+                  J.B. Heaton
+                  <A HREF="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3133110" style="color: #0000ff">[pdf]</A>
+              </ul>
+            </div>
+
+
+
+            <div class="sec1" style="text-align:left">
+              <br>7. Survey<br></div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Natural language based financial forecasting: a survey
+                  </div>
+                  (2018), F. Z. Xing et al.
+                  <A HREF="https://link.springer.com/article/10.1007/s10462-017-9588-9" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It clarifies the scope of natural language based
+                      financial forecasting (NLFF) research by ordering and structuring
+                      techniques and applications from related work.
+
+                  </ul>
+              </ul>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Surveying stock market forecasting techniques – Part II: Soft computing methods
+                  </div>
+                  (2009), G. S. Atsalakis et al.
+                  <A HREF="https://www.sciencedirect.com/science/article/pii/S0957417408004417" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It surveys more than 100 related published articles that
+                      focus on neural and neuro-fuzzy techniques derived and applied to forecast stock markets.
+
+                  </ul>
+              </ul>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+            <div class="sec1_sub1">
+
+              <ul type="disk">
+                <li>
+                  <div class="sec1_sub1_1" style="display: inline">
+                    Computational Intelligence and Financial Markets: A Survey and Future Directions
+                  </div>
+                  (2016), R. C. Cavalcante et al.
+                  <A HREF="https://www.sciencedirect.com/science/article/pii/S095741741630029X" style="color: #0000ff">[pdf]</A>
+                  <ul type="disk">
+                    <li>
+                      <i>Focus</i>: It gives an overview of the most important primary
+                      studies published from 2009 to 2015, which cover techniques for preprocessing
+                      and clustering of financial data, for forecasting future market movements,
+                      for mining financial text information, among others.
+
+
+                  </ul>
+              </ul>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="footer-above">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 text-center" , style="float:none;margin:auto;">
+            <div class="intro-text" style="text-align:center;">
+              <!--<hr class="star-primary">-->
+              <br>
+              About <b>DeepAllocation</b>
+
+              <div class="skills">
+                We continuously develop and upgrade our AI-powered stock
+                market prediction system and share its predictions that could
+                help investors achieve better outcomes.
+                <br>
+              </div>
+
+
+              <div class="skills">
+                <br>
+                Contact: <a href="mailto:deepallocation@gmail.com">
+                  <font color=#ffffff> deepallocation&#64;gmail.com</font>
+                </a>
+                <style>
+                  a:hover {
+                    text-decoration: underline
+                  }
+                </style>
+              </div> <br>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <!-- Portfolio Modals -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-lg-offset-2" style="float:none;margin:auto;">
+            <div class="modal-body" style="float:none;margin:auto;">
+              <h2>Weight<br></h2>
+              <img src="img/Weight_0.PNG" class="img-responsive img-centered" alt="">
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-lg-offset-2" style="float:none;margin:auto;">
+            <div class="modal-body" style="float:none;margin:auto;">
+              <h2>Weight<br></h2>
+              <img src="img/Weight_1.PNG" class="img-responsive img-centered" alt="">
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-lg-offset-2" style="float:none;margin:auto;">
+            <div class="modal-body" style="float:none;margin:auto;">
+              <h2>Weight<br></h2>
+              <img src="img/Weight_2.PNG" class="img-responsive img-centered" alt="">
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-lg-offset-2" style="float:none;margin:auto;">
+            <div class="modal-body" style="float:none;margin:auto;">
+              <h2>Weight<br></h2>
+              <img src="img/Weight_3.PNG" class="img-responsive img-centered" alt="">
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="../js/jqBootstrapValidation.js"></script>
+  <script src="../js/contact_me.js"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="../js/freelancer.min.js"></script>
+
+</body>
+
+</html>
