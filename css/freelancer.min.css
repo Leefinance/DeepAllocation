@@ -15,8 +15,11 @@ body {
     /*Lato,'Helvetica Neue',Helvetica,*/
     Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   ;
-  overflow-x: hidden;
-  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
 }
 
