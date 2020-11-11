@@ -829,6 +829,7 @@ margin: auto;
     line-height: 1.0em;
   }
 
+
 }
 
 
@@ -1862,4 +1863,8 @@ color:  #616161; /*#ff006f;*/
 
 .line_break_spacing {
   line-height: 1.1em;
+}
+
+.line_break_spacing_2 {
+  line-height: 0.1em;
 }
