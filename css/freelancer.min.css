@@ -137,11 +137,11 @@ background:  #C779D0;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #4BC0C8, #C779D0);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #4BC0C8, #C779D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-/*
+
 background: #232526;
 background: -webkit-linear-gradient(to bottom, #414345, #232526);
 background: linear-gradient(to bottom, #414345, #232526);
-*/
+
 }
 
 
@@ -270,7 +270,8 @@ font-size: 0.05px;
 
 
 header .container_header2 {
-  padding-top: 15px;
+  padding-top: 5px;
+  padding-bottom: 30px;
 margin-top: 0px;
   margin-bottom: -10px;
   /*background-color: #ffffff;*/ /*#F2F4F4;*/
@@ -386,6 +387,21 @@ section.expected_returns .sec1_left {
   margin-top: 0px;
 
 }
+
+section.expected_returns  .motto_sec1 {
+
+  font-size: 1.5em
+    /*our commit*/
+  ;
+  font-weight: 600;
+  /*color: #2C3E50*/
+  color: #616161;
+  text-align: center;
+  line-height: 1.1em;
+
+}
+
+
 
 section.expected_returns .intro-text .motto_sec1 {
   padding-top: 0px;
@@ -637,15 +653,19 @@ footer.text-center .intro-text {
 
   /*HEADER 1 ***************************************/
   header .container {
-  background: #FEAC5E;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  /*
+  background: #FEAC5E;
+  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  */
   /*
   background: #232526;
   background: -webkit-linear-gradient(to bottom, #414345, #232526);
   background: linear-gradient(to bottom, #414345, #232526);
   */
+
+
+
   }
 
   section .container_sec3 {
@@ -656,6 +676,24 @@ footer.text-center .intro-text {
   section .container_sec3_color {
   background-color: #ffffff;
  }
+
+
+ section.expected_returns  .motto_sec1 {
+/*display: none;*/
+padding-top: 0px;
+font-size: 2.0em
+  /*our commit*/
+;
+font-weight: 600;
+/*color: #2C3E50*/
+color: #616161;
+/*Build Your Own Portfolio*/
+line-height: 1.5em;
+ }
+
+
+
+
 
 
   header .intro-text .motto {
@@ -771,7 +809,6 @@ font-size: 0.7em;
 
 
 
-
   /*SECTION 2 ***************************************/
   section.expected_returns .line_page {
     color: #424242;
@@ -868,7 +905,14 @@ margin: auto;
       font-weight: 300;
           font-size: 1.75em;
     }
+
+
+
+
   /*SECTION 1 ***************************************/
+
+
+
 
   section.expected_returns .container {
     margin-bottom: 50px;
@@ -935,7 +979,7 @@ margin: auto;
 
 /*SECTION 1 ***************************************/
 header .container_header2 {
-padding-top:  10px;padding-bottom:  20px;
+padding-top:  10px;padding-bottom:  60px;
 
 }
 section .container_sec2 {
