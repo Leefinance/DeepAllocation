@@ -396,12 +396,23 @@ section.expected_returns  .motto_sec1 {
   font-weight: 600;
   /*color: #2C3E50*/
   color: #616161;
-  text-align: center;
+  text-align: left;
   line-height: 1.1em;
 
 }
 
+section.expected_returns  .motto_sec2 {
 
+  font-size: 1.5em
+    /*our commit*/
+  ;
+  font-weight: 600;
+  /*color: #2C3E50*/
+  color: #616161;
+  text-align: center;
+  line-height: 1.1em;
+
+}
 
 section.expected_returns .intro-text .motto_sec1 {
   padding-top: 0px;
@@ -1852,8 +1863,9 @@ color:  #616161; /*#ff006f;*/
   outline: none;
   white-space: nowrap;
   background: #e90418;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 0.8em;
 }
 
 @keyframes netflix_style {
