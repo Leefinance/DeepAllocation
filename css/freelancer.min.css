@@ -545,7 +545,7 @@ section.expected_returns .sec3_left {
   font-weight: 500;
 }
 
-section.expected_returns .sec3_left_sub_above {
+section.expected_returns2 .sec3_left_sub_above {
   font-size: 1.6em;
   background: linear-gradient(110deg, #212121 60%, #616161 60%);
   color:#ffffff;
@@ -553,7 +553,7 @@ section.expected_returns .sec3_left_sub_above {
   margin-top: -30px;
 }
 
-section.expected_returns .sec3_left_sub {
+section.expected_returns2 .sec3_left_sub {
   font-size: 1.25em
     /*our commit*/
   ;
@@ -567,7 +567,7 @@ section.expected_returns .sec3_left_sub {
   background: #f2f2f2;
 }
 
-section.expected_returns .sec3_right {
+section.expected_returns2 .sec3_right {
   display: block;
     text-align: center;
   margin: auto;
@@ -660,6 +660,18 @@ footer.text-center .intro-text {
 }
 */
 
+
+@media (min-width:600px) {
+
+
+ section.expected_returns  .container-fluid {
+    max-width: 600px;
+    text-align: center;
+    float: none; margin: 0 auto;
+  }
+
+}
+
 @media (min-width:768px) {
 
   /*HEADER 1 ***************************************/
@@ -679,6 +691,13 @@ footer.text-center .intro-text {
 
   }
 
+
+  section.expected_returns .container-fluid {
+    max-width: 768px;
+    text-align: center;
+    float: none; margin: 0 auto;
+  }
+
   section .container_sec3 {
   margin-bottom:  405px;
 
@@ -692,7 +711,7 @@ footer.text-center .intro-text {
  section.expected_returns  .motto_sec1 {
 /*display: none;*/
 padding-top: 0px;
-font-size: 2.0em
+font-size: 1.75em
   /*our commit*/
 ;
 font-weight: 600;
@@ -794,11 +813,11 @@ font-size: 0.7em;
 
 
 
-  section.expected_returns .sec3_left_sub_above {
-    margin-top: 20px;
+  section.expected_returns2 .sec3_left_sub_above {
+    margin-top: -30px;
   }
-  section.expected_returns .sec3_right {
-  margin-top: 20px;
+  section.expected_returns2 .sec3_right {
+  margin-top: -30px;
   }
 
 
@@ -860,7 +879,7 @@ margin: auto;
     font-weight: 500;
   }
 
-  section.expected_returns  .sec3_left_sub {
+  section.expected_returns2  .sec3_left_sub {
     font-size: 1.25em;
     font-weight: 300;
 
@@ -887,6 +906,12 @@ margin: auto;
 @media (min-width:990px) {
 
 
+  section.expected_returns .container-fluid {
+    max-width: 990px;
+    text-align: center;
+    float: none; margin: 0 auto;
+    margin-bottom: 50px;
+  }
 
     header .intro-text .motto {
       font-weight: 600;
@@ -929,11 +954,11 @@ margin: auto;
     margin-bottom: 50px;
   }
 
-  section.expected_returns .sec3_left_sub_above {
-    margin-top: 20px;
+  section.expected_returns2 .sec3_left_sub_above {
+    margin-top: -30px;
   }
-  section.expected_returns .sec3_right {
-  margin-top: 20px;
+  section.expected_returns2 .sec3_right {
+  margin-top: -30px;
   }
 
 
@@ -965,7 +990,13 @@ margin: auto;
 @media (min-width:1200px) {
 
 
+ section.expected_returns  .container-fluid {
+    max-width: 1200px;
+    text-align: center;
+    float: none; margin: 0 auto;
+    margin-bottom: 50px;
 
+  }
 
   /*HEADER 2 ****************************************/
 
@@ -1002,11 +1033,12 @@ section.expected_returns .container {
   margin-bottom: 50px;
 }
 
-section.expected_returns .sec3_left_sub_above {
-  margin-top: 0px;
+section.expected_returns2 .sec3_left_sub_above {
+  margin-top: -30px;
 }
-section.expected_returns .sec3_right {
-margin-top: 0px;
+section.expected_returns2 .sec3_right {
+margin-top: -30px;
+text-align: center;
 }
 
   section .container_sec3 {
@@ -1025,7 +1057,11 @@ margin-top: 0px;
     font-size: 1.8em;
 
   }
+  section.expected_returns  .motto_sec1 {
 
+    font-size: 2.0em;
+
+  }
   section.expected_returns .intro-text .motto_sec1_spacing {
 
     padding: 20px;
@@ -1050,11 +1086,11 @@ margin-top: 0px;
     font-size: 1.5em;
   }
 
-  section.expected_returns .sec3_left_sub {
+  section.expected_returns2 .sec3_left_sub {
     font-size: 1.5em;
   }
 
-  section.expected_returns .sec3_left_sub_above {
+  section.expected_returns2 .sec3_left_sub_above {
     font-size: 2.0em;
     background: linear-gradient(110deg, #212121 60%, #616161 60%);
     color:#ffffff;
