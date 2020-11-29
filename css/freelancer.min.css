@@ -216,11 +216,11 @@ header .intro-text .motto1_1 {
   font-size: 4.0em
     /*our commit*/
   ;
-  font-weight: 200;
+  font-weight: 300;
   /*color: #2C3E50*/
   color: #e90418;
   /*Build Your Own Portfolio*/
-  line-height: 1.1em;
+  line-height: 1.0em;
 
 }
 
