@@ -200,7 +200,7 @@ header .intro-text {
   /*our future*/
 }
 
-header .intro-text .motto {
+header .intro-text .motto_short {
   font-size: 2.5em
     /*our commit*/
   ;
@@ -212,7 +212,10 @@ header .intro-text .motto {
 
 }
 
+header .intro-text .motto {
+display:none;
 
+}
 
 header .intro-text .motto1_1 {
   font-size: 2.5em
@@ -680,7 +683,22 @@ footer.text-center .intro-text {
 
 @media (min-width:600px) {
 
+  header .intro-text .motto_short {
+    display: none;
+  }
 
+  header .intro-text .motto {
+    display:inline;
+    font-size: 2.5em
+      /*our commit*/
+    ;
+    font-weight: 600;
+    /*color: #2C3E50*/
+    color: #ffffff;
+    /*Build Your Own Portfolio*/
+    line-height: 1.1em;
+
+  }
  section.expected_returns  .container-fluid {
     max-width: 600px;
     text-align: center;
