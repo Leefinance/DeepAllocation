@@ -141,7 +141,9 @@ background: linear-gradient(to bottom, #4BC0C8, #C779D0); /* W3C, IE 10+/ Edge, 
 background: #232526;
 background: -webkit-linear-gradient(to bottom, #414345, #232526);
 background: linear-gradient(to bottom, #414345, #232526);
-
+background: radial-gradient(#999, #000);
+background-image: radial-gradient(circle 100px, #414345, #232526);
+background-image: radial-gradient(circle 150px, #545557, #232526);
 }
 
 
